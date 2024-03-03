@@ -1,11 +1,19 @@
 package com.psy.board.dto;
 
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+//lombok annotation
+@Getter
+@Setter
+@ToString
 public class BoardDTO {
-    private Long id;
-    private String boardWriter;
-    private String boardPass;
-    private String boardTitle;
-    private String boardContents;
-    private int boardHits;
-    private String createdAt;
+    private Long id; //글번호
+    private String boardWriter; //작성자
+    private String boardPass; //글비밀번호
+    private String boardTitle; //글제목
+    private String boardContents; //글내용
+    private int boardHits; //조회수
+    private String createdAt; //작성시간
 }
